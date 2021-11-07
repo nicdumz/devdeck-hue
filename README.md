@@ -1,20 +1,20 @@
-# DevDeck - Key Light
-![CI](https://github.com/jamesridgway/devdeck-key-light/workflows/CI/badge.svg?branch=main)
+# DevDeck - Philips Hue integration
+![CI](https://github.com/nicdumz/devdeck-hue/workflows/CI/badge.svg?branch=main)
 
-Elgato Key Light controls for [DevDeck](https://github.com/jamesridgway/devdeck).
+Philips Hue light controls for [DevDeck](https://github.com/jamesridgway/devdeck).
 
 ## Installing
-Simplify install *DevDeck - Key Light* into the same python environment that you have installed DevDeck.
+Simply install *DevDeck - Hue* into the same python environment that you have installed DevDeck.
 
-    pip install devdeck-key-light
+    pip install devdeck-hue
 
 You can then update your DevDeck configuration to use decks and controls from this package.
 
 ## Controls
 
-* `key_light_toggle_control.KeylightToggleControl`
+* `toggle.Toggle`
 
-   Can be used to toggle the state of an Elgato Key Light.
+   Can be used to toggle on/off a Philips Hue lamp.
 
 * `brightness.Increase`
 
@@ -33,16 +33,16 @@ Example configuration:
         name: devdeck.decks.single_page_deck_controller.SinglePageDeckController
         settings:
           controls:
-            - name: devdeck_key_light.key_light_toggle_control.KeyLightToggleControl
+            - name: devdeck_hue.toggle.Toggle
               key: 0
               settings:
                 host: 192.168.1.23
-            - name: devdeck_key_light.brightness.Increase
+            - name: devdeck_hue.brightness.Increase
               key: 1
               settings:
                 host: 192.168.1.23
                 step: 20
-            - name: devdeck_key_light.brightness.Decrease
+            - name: devdeck_hue.brightness.Decrease
               key: 1
               settings:
                 host: 192.168.1.23

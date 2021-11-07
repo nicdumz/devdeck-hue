@@ -15,13 +15,13 @@ with open('requirements.txt') as f:
     install_reqs = f.read().splitlines()
 
 setup(
-    name='devdeck_key_light',
+    name='devdeck_hue',
     version=get_version(),
-    description="Elgato Key Light controls for DevDeck.",
+    description="Philips Hue controls for DevDeck.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='James Ridgway',
-    url='https://github.com/jamesridgway/devdeck-key-light',
+    author='Nicolas Dumazet',
+    url='https://github.com/nicdumz/devdeck-hue',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
