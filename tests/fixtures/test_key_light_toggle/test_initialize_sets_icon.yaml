@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: /api/__scrubbed_username__/lights/1
+    uri: http://192.168.1.241/api/fake_test_username/lights/1
   response:
     body: {string: '{"state": {"on": true, "bri": 162, "hue": 8417, "sat": 140, "effect":
         "none", "xy": [0.4573, 0.41], "ct": 366, "alert": "select", "colormode": "ct",

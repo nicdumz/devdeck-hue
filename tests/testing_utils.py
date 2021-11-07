@@ -9,14 +9,6 @@ class TestingUtils:
         return os.path.abspath(os.path.join(os.path.dirname(__file__), relative_path))
 
     @staticmethod
-    def scrub_request(request: Request) -> Request:
-        components = request.path.split('/')
-        assert components[1] == 'api'
-        components[2] = '__scrubbed_username__'
-        request.uri = '/'.join(components)
-        return request
-
-    @staticmethod
     def scrub_response(response: Request) -> Request:
         data = json.loads(response['body']['string'])
         if isinstance(data, dict):
