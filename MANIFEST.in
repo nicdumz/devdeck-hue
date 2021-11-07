@@ -1,1 +1,2 @@
 include devdeck_hue/assets/*
+include requirements.txt
