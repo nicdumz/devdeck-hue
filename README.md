@@ -51,8 +51,8 @@ Example configuration:
               settings:
                 host: 192.168.1.23
                 light_id: 4
-              - name: devdeck_hue.brightness.Increase
-                key: 1
+            - name: devdeck_hue.brightness.Increase
+              key: 1
               settings:
                 host: 192.168.1.23
                 light_id: 4
